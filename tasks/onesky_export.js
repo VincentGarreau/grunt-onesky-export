@@ -48,7 +48,7 @@ module.exports = function (grunt) {
 
             if (options.exportType === 'multilingual') {
                 url = url + 'translations/multilingual';
-                queryParams = _.extend(queryParams, { 'file_format': 'I18NEXT_MULTILINGUAL_JSON' });
+                queryParams = _.extend(queryParams, { 'file_format': options.fileFormat });
             }
 
             if (options.exportType === 'locale') {
